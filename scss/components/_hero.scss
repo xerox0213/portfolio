@@ -1,9 +1,9 @@
 .hero {
+  min-height: 100vh;
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
 
   &__picture-wrapper {
     width: 120px;
