@@ -158,4 +158,61 @@ h3 {
   }
 }
 
+.content {
+  padding-top: 150px;
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--component-bg);
+  border: 1px solid var(--no-interactive-component-border);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.btn:hover {
+  background-color: var(--hovered-component-bg);
+  border-color: var(--hovered-component-border);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.hero__picture-wrapper {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--hovered-component-bg);
+}
+.hero__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero__hello {
+  font-weight: 500;
+}
+.hero__intro {
+  text-align: center;
+  margin-top: 25px;
+  width: 46%;
+  margin-bottom: 30px;
+}
+.hero__see-projects-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
