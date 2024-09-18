@@ -1,0 +1,23 @@
+:root {
+  /* ===== FONTS ===== */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --fs-h1: 36px;
+  --fs-h2: 30px;
+  --fs-h3: 24px;
+  --fs-text: 16px;
+  --fs-icon: 24px;
+
+  /* ====== DEFAULT COLORS ===== */
+  --main-bg: #111111;
+  --component-bg: #222222;
+  --hovered-component-bg: #2A2A2A;
+  --hovered-component-border: #606060;
+  --interactive-component-border: #484848;
+  --no-interactive-component-border: #3A3A3A;
+  --text-color: #EEEEEE;
+
+  /* ===== PAGE STRUCTURE ===== */
+  --page-width: 1000px;
+  --page-padding: 5px;
+}
