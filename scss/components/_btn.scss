@@ -1,0 +1,11 @@
+.btn {
+  background-color: var(--component-bg);
+  border: 1px solid var(--no-interactive-component-border);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.btn:hover {
+  background-color: var(--hovered-component-bg);
+  border-color: var(--hovered-component-border);
+}
