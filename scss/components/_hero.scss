@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &__picture-wrapper {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--hovered-component-bg);
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__hello {
+    font-weight: 500;
+  }
+
+  &__intro {
+    text-align: center;
+    margin-top: 25px;
+    width: 46%;
+    margin-bottom: 30px;
+  }
+  &__see-projects-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    text-decoration: none;
+    padding: 10px 25px;
+  }
+}
