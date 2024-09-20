@@ -1,12 +1,15 @@
-.interactive-card {
+.card {
   background-color: var(--component-bg);
   border: 1px solid var(--interactive-component-border);
   padding: 20px;
   border-radius: 15px;
   color: var(--text-color);
+}
+
+.card--interactive {
   transition: border-color .2s ease;
 }
 
-.interactive-card:hover {
+.card--interactive:hover {
   border-color: var(--hovered-component-border);
 }
