@@ -1,0 +1,44 @@
+.projects {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: max-content;
+    gap: 20px;
+  }
+
+  &__project-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-decoration: none;
+  }
+
+  &__project-card-header {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__project-card-header::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #04C98D;
+  }
+
+  &__project-card-description {
+    color: var(--low-contrast-text-color);
+  }
+
+  &__project-card-footer {
+    display: flex;
+    column-gap: 10px;
+    margin-top: auto;
+  }
+
+  &__project-card-techno-icon {
+    width: 24px;
+  }
+}
