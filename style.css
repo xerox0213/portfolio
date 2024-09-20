@@ -37,6 +37,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --interactive-component-border: #484848;
   --no-interactive-component-border: #3A3A3A;
   --text-color: #EEEEEE;
+  --low-contrast-text-color: #B4B4B4;
+  --opposite-text-color: #202020;
   /* ===== PAGE STRUCTURE ===== */
   --page-width: 1000px;
   --page-padding: 5px;
@@ -51,6 +53,8 @@ p, h1, h2, h3, h4, h5, h6 {
     --interactive-component-border: #484848;
     --no-interactive-component-border: #3A3A3A;
     --text-color: #EEEEEE;
+    --low-contrast-text-color: #B4B4B4;
+    --opposite-text-color: #202020;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -62,6 +66,8 @@ p, h1, h2, h3, h4, h5, h6 {
     --interactive-component-border: #CECECE;
     --no-interactive-component-border: #D9D9D9;
     --text-color: #202020;
+    --low-contrast-text-color: #646464;
+    --opposite-text-color: #EEEEEE;
   }
 }
 body {
@@ -158,10 +164,16 @@ h3 {
   }
 }
 
-.content {
+.main {
   padding: 0 10px 0 10px;
   max-width: var(--page-width);
   margin: 0 auto;
+}
+.main__section {
+  margin-bottom: 100px;
+}
+.main__section-title {
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -213,6 +225,56 @@ h3 {
   column-gap: 5px;
   text-decoration: none;
   padding: 10px 25px;
+}
+
+.interactive-card {
+  background-color: var(--component-bg);
+  border: 1px solid var(--interactive-component-border);
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--text-color);
+  transition: border-color 0.2s ease;
+}
+
+.interactive-card:hover {
+  border-color: var(--hovered-component-border);
+}
+
+.projects__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: max-content;
+  gap: 20px;
+}
+.projects__project-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-decoration: none;
+}
+.projects__project-card-header {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.projects__project-card-header::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #04C98D;
+}
+.projects__project-card-description {
+  color: var(--low-contrast-text-color);
+}
+.projects__project-card-footer {
+  display: flex;
+  column-gap: 10px;
+  margin-top: auto;
+}
+.projects__project-card-techno-icon {
+  width: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
