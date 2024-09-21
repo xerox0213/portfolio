@@ -67,26 +67,19 @@
   }
 
   &__light-switcher, &__dark-switcher {
+    display: none;
     border: none;
     background-color: transparent;
   }
 
-  @media (prefers-color-scheme: dark) {
-    &__light-switcher {
+  &__light-switcher {
+    @media (prefers-color-scheme: dark) {
       display: block;
-    }
-
-    &__dark-switcher {
-      display: none;
     }
   }
 
-  @media (prefers-color-scheme: light) {
-    &__light-switcher {
-      display: none;
-    }
-
-    &__dark-switcher {
+  &__dark-switcher {
+    @media (prefers-color-scheme: light) {
       display: block;
     }
   }
