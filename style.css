@@ -31,6 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --fs-icon: 24px;
   /* ====== DEFAULT COLORS ===== */
   --main-bg: #111111;
+  --subtle-component-bg: #191919;
   --component-bg: #222222;
   --hovered-component-bg: #2A2A2A;
   --hovered-component-border: #606060;
@@ -47,6 +48,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (prefers-color-scheme: dark) {
   :root {
     --main-bg: #111111;
+    --subtle-component-bg: #191919;
     --component-bg: #222222;
     --hovered-component-bg: #2A2A2A;
     --hovered-component-border: #606060;
@@ -60,6 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (prefers-color-scheme: light) {
   :root {
     --main-bg: #FCFCFC;
+    --subtle-component-bg: #F9F9F9;
     --component-bg: #F0F0F0;
     --hovered-component-bg: #E8E8E8;
     --hovered-component-hover: #BBBBBB;
@@ -228,7 +231,7 @@ h3 {
 }
 
 .card {
-  background-color: var(--component-bg);
+  background-color: var(--subtle-component-bg);
   border: 1px solid var(--interactive-component-border);
   padding: 20px;
   border-radius: 15px;
@@ -266,7 +269,9 @@ h3 {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #04C98D;
+  opacity: 0.5;
+  background-color: #65DFBB;
+  transition: opacity 0.2s ease;
 }
 .projects__project-card-description {
   color: var(--low-contrast-text-color);
@@ -278,6 +283,44 @@ h3 {
 }
 .projects__project-card-techno-icon {
   width: 24px;
+}
+.projects__project-card:hover .projects__project-card-header::before {
+  opacity: 1;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 20px;
+}
+.skills__grid-item {
+  border: 1px solid var(--no-interactive-component-border);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.skills__grid-item:last-child {
+  grid-column: 1/-1;
+}
+.skills__techno-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.skills__techno-logo {
+  width: 55px;
+}
+.skills__techno-logo--spin {
+  animation: 8s ease-in-out 0s infinite alternate spin;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
