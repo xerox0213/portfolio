@@ -12,11 +12,19 @@
     display: flex;
     max-width: var(--page-width);
     margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      justify-content: space-between;
+    }
   }
 
   &__wrapper {
     flex-basis: calc(100% / 3);
     min-width: max-content;
+
+    @media screen and (max-width: 768px) {
+      flex-basis: auto;
+    }
   }
 
   &__page-links-wrapper {
@@ -24,6 +32,10 @@
     justify-content: center;
     align-items: center;
     column-gap: 5px;
+    
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__theme-switchers-wrapper {
