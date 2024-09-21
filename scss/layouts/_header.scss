@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 5px;
-    
+
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -89,6 +89,14 @@
     &__dark-switcher {
       display: block;
     }
+  }
+
+  &__theme-switcher[data-visible="true"] {
+    display: block;
+  }
+
+  &__theme-switcher[data-visible="false"] {
+    display: none;
   }
 }
 
