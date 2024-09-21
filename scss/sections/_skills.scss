@@ -1,0 +1,41 @@
+.skills {
+  &__grid {
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    gap: 20px;
+  }
+
+  &__grid-item {
+    border: 1px solid var(--no-interactive-component-border);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__grid-item:last-child {
+    grid-column: 1/-1;
+  }
+
+  &__techno-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__techno-logo {
+    width: 55px;
+  }
+
+  &__techno-logo--spin {
+    animation: 8s ease-in-out 0s infinite alternate spin;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
