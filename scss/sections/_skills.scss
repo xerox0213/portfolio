@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: .7fr 1fr;
     gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__grid-item {
@@ -13,6 +17,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   &__grid-item:last-child {
@@ -27,6 +36,10 @@
 
   &__techno-logo {
     width: 55px;
+
+    @media screen and (max-width: 768px){
+      width : 45px
+    }
   }
 
   &__techno-logo--spin {

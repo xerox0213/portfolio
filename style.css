@@ -293,6 +293,11 @@ h3 {
   grid-template-columns: 0.7fr 1fr;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .skills__grid-item {
   border: 1px solid var(--no-interactive-component-border);
   border-radius: 15px;
@@ -301,6 +306,12 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+@media screen and (max-width: 500px) {
+  .skills__grid-item {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .skills__grid-item:last-child {
   grid-column: 1/-1;
@@ -312,6 +323,11 @@ h3 {
 }
 .skills__techno-logo {
   width: 55px;
+}
+@media screen and (max-width: 768px) {
+  .skills__techno-logo {
+    width: 45px;
+  }
 }
 .skills__techno-logo--spin {
   animation: 8s ease-in-out 0s infinite alternate spin;
