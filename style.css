@@ -223,7 +223,7 @@ h3 {
 }
 
 .main {
-  padding: 0 10px 0 10px;
+  padding: 0 5px;
   max-width: var(--page-width);
   margin: 0 auto;
 }
