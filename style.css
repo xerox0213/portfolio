@@ -338,5 +338,47 @@ h3 {
     transform: rotate(1turn);
   }
 }
+.about-me__wrapper {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 700px) {
+  .about-me__wrapper {
+    flex-direction: column;
+  }
+}
+.about-me__content {
+  color: var(--low-contrast-text-color);
+}
+.about-me__content a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.about-me__content a:hover {
+  text-decoration: underline;
+}
+.about-me__picture-wrapper {
+  width: 320px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--subtle-component-bg);
+  object-position: bottom;
+}
+@media screen and (max-width: 700px) {
+  .about-me__picture-wrapper {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+  }
+}
+.about-me__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 /*# sourceMappingURL=style.css.map */

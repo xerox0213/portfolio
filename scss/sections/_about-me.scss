@@ -1,0 +1,47 @@
+.about-me {
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    color: var(--low-contrast-text-color);
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__picture-wrapper {
+    width: 320px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--subtle-component-bg);
+    object-position: bottom;
+
+    @media screen and (max-width: 700px) {
+      width: 300px;
+      height: 300px;
+      align-self: center;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
