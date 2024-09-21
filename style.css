@@ -113,15 +113,30 @@ h3 {
   max-width: var(--page-width);
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .header__nav {
+    justify-content: space-between;
+  }
+}
 .header__wrapper {
   flex-basis: 33.3333333333%;
   min-width: max-content;
+}
+@media screen and (max-width: 768px) {
+  .header__wrapper {
+    flex-basis: auto;
+  }
 }
 .header__page-links-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .header__page-links-wrapper {
+    display: none;
+  }
 }
 .header__theme-switchers-wrapper {
   display: flex;
@@ -210,7 +225,8 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  transform: scale(2);
 }
 .hero__hello {
   font-weight: 500;
@@ -220,6 +236,16 @@ h3 {
   margin-top: 25px;
   width: 46%;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 650px) {
+  .hero__intro {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero__intro {
+    width: 100%;
+  }
 }
 .hero__see-projects-btn {
   display: inline-flex;
