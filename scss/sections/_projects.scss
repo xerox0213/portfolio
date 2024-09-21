@@ -25,7 +25,9 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #04C98D;
+    opacity: .5;
+    background-color: #65DFBB;
+    transition: opacity .2s ease;
   }
 
   &__project-card-description {
@@ -40,5 +42,9 @@
 
   &__project-card-techno-icon {
     width: 24px;
+  }
+
+  &__project-card:hover &__project-card-header::before {
+    opacity: 1;
   }
 }
