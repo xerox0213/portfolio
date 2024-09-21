@@ -73,6 +73,32 @@ p, h1, h2, h3, h4, h5, h6 {
     --opposite-text-color: #EEEEEE;
   }
 }
+body[data-theme=light] {
+  --main-bg: #FCFCFC;
+  --subtle-component-bg: #F9F9F9;
+  --component-bg: #F0F0F0;
+  --hovered-component-bg: #E8E8E8;
+  --hovered-component-hover: #BBBBBB;
+  --interactive-component-border: #CECECE;
+  --no-interactive-component-border: #D9D9D9;
+  --text-color: #202020;
+  --low-contrast-text-color: #646464;
+  --opposite-text-color: #EEEEEE;
+}
+
+body[data-theme=dark] {
+  --main-bg: #111111;
+  --subtle-component-bg: #191919;
+  --component-bg: #222222;
+  --hovered-component-bg: #2A2A2A;
+  --hovered-component-border: #606060;
+  --interactive-component-border: #484848;
+  --no-interactive-component-border: #3A3A3A;
+  --text-color: #EEEEEE;
+  --low-contrast-text-color: #B4B4B4;
+  --opposite-text-color: #202020;
+}
+
 body {
   background-color: var(--main-bg);
   color: var(--text-color);
@@ -190,6 +216,12 @@ h3 {
     display: block;
   }
 }
+.header__theme-switcher[data-visible=true] {
+  display: block;
+}
+.header__theme-switcher[data-visible=false] {
+  display: none;
+}
 
 .main {
   padding: 0 10px 0 10px;
@@ -198,6 +230,11 @@ h3 {
 }
 .main__section {
   margin-bottom: 100px;
+}
+@media screen and (max-width: 425px) {
+  .main__section {
+    margin-bottom: 70px;
+  }
 }
 .main__section-title {
   margin-bottom: 20px;
