@@ -80,6 +80,7 @@ body {
 
 body {
   font-family: var(--font-secondary);
+  font-size: var(--fs-text);
 }
 
 h1, h2, h3 {
@@ -98,6 +99,14 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+@media screen and (max-width: 425px) {
+  :root {
+    --fs-h1: 28px;
+    --fs-h2: 24px;
+    --fs-h3: 20px;
+    --fs-text: 14px;
+  }
+}
 .header {
   position: fixed;
   top: 0;
