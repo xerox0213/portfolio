@@ -12,6 +12,14 @@
   }
 }
 
+body[data-theme="light"] {
+  @include light;
+}
+
+body[data-theme="dark"] {
+  @include dark;
+}
+
 body {
   background-color: var(--main-bg);
   color: var(--text-color);
