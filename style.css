@@ -197,6 +197,7 @@ h3 {
   font-size: var(--fs-icon);
 }
 .header__light-switcher, .header__dark-switcher {
+  display: none;
   border: none;
   background-color: transparent;
 }
@@ -204,14 +205,8 @@ h3 {
   .header__light-switcher {
     display: block;
   }
-  .header__dark-switcher {
-    display: none;
-  }
 }
 @media (prefers-color-scheme: light) {
-  .header__light-switcher {
-    display: none;
-  }
   .header__dark-switcher {
     display: block;
   }
