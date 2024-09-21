@@ -20,6 +20,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* ===== FONTS ===== */
   --font-primary: "Montserrat", sans-serif;
@@ -225,6 +229,7 @@ h3 {
 }
 .main__section {
   margin-bottom: 100px;
+  scroll-margin-top: 55.5px;
 }
 @media screen and (max-width: 425px) {
   .main__section {
