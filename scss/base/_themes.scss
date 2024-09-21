@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --main-bg: #111111;
+    --subtle-component-bg: #191919;
     --component-bg: #222222;
     --hovered-component-bg: #2A2A2A;
     --hovered-component-border: #606060;
@@ -15,6 +16,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --main-bg: #FCFCFC;
+    --subtle-component-bg: #F9F9F9;
     --component-bg: #F0F0F0;
     --hovered-component-bg: #E8E8E8;
     --hovered-component-hover: #BBBBBB;
