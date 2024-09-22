@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 10000;
-  padding: 10px var(--page-padding);
+  padding: 10px 0;
   background-color: var(--main-bg);
   border-bottom: 1px solid var(--no-interactive-component-border);
 
@@ -19,6 +19,7 @@
   }
 
   &__wrapper {
+    padding: 0 var(--page-padding);
     flex-basis: calc(100% / 3);
     min-width: max-content;
 
