@@ -46,7 +46,7 @@ html {
   --opposite-text-color: #202020;
   /* ===== PAGE STRUCTURE ===== */
   --page-width: 1000px;
-  --page-padding: 5px;
+  --page-padding: 15px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -223,7 +223,7 @@ h3 {
 }
 
 .main {
-  padding: 0 5px;
+  padding: 0 var(--page-padding);
   max-width: var(--page-width);
   margin: 0 auto;
 }
